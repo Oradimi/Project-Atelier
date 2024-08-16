@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://dsps6d2dalbk5"]
+
+[ext_resource type="Script" path="res://data_scripts/trait_data.gd" id="1_6n1hu"]
+
+[resource]
+script = ExtResource("1_6n1hu")
+name = "Effect Up E"
+value = 1.2

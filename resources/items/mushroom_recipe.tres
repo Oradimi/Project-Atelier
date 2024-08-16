@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RecipeData" load_steps=3 format=3 uid="uid://du4s0vid45e6d"]
+
+[ext_resource type="Resource" uid="uid://v8lvh11feefp" path="res://resources/items/mushroom.tres" id="1_d5ku3"]
+[ext_resource type="Script" path="res://data_scripts/recipe_data.gd" id="1_e74ic"]
+
+[resource]
+script = ExtResource("1_e74ic")
+item = ExtResource("1_d5ku3")
+level = 1
+effect_thresholds = {}
