@@ -3,192 +3,362 @@
 [ext_resource type="Script" path="res://scenes/grid.gd" id="1_5xjxb"]
 [ext_resource type="PackedScene" uid="uid://dk06xy8jfk211" path="res://scenes/item.tscn" id="2_1l0gd"]
 
-[node name="Grid" type="Node2D"]
+[node name="Grid" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_5xjxb")
 
-[node name="GridContainer" type="GridContainer" parent="."]
-offset_left = 600.0
-offset_top = 100.0
-offset_right = 1100.0
-offset_bottom = 600.0
+[node name="HBox" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Item" parent="HBox" instance=ExtResource("2_1l0gd")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="GridContainer" type="GridContainer" parent="HBox/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -383.0
+offset_top = -383.0
+offset_right = 383.0
+offset_bottom = 383.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+size_flags_stretch_ratio = 2.0
 columns = 5
 
-[node name="ColorRect1" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect1" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect2" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect2" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect3" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect3" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect4" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect4" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect5" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect5" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect6" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect6" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect7" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect7" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect8" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect8" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect9" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect9" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect10" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect10" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect11" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect11" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect12" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect12" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect13" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect13" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect14" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect14" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect15" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect15" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect16" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect16" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect17" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect17" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect18" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect18" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect19" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect19" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect20" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect20" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect21" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect21" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect22" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect22" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect23" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect23" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect24" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect24" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="ColorRect25" type="ColorRect" parent="GridContainer"]
-custom_minimum_size = Vector2(100, 100)
+[node name="ColorRect25" type="ColorRect" parent="HBox/Control/GridContainer"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 
-[node name="Item" parent="." instance=ExtResource("2_1l0gd")]
+[node name="PreviewGridContainer" type="GridContainer" parent="HBox/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -398.0
+offset_top = -398.0
+offset_right = 368.0
+offset_bottom = 368.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+columns = 5
+
+[node name="ColorRect1" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect2" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect3" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect4" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect5" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect6" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect7" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect8" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect9" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect10" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect11" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect12" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect13" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect14" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect15" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect16" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect17" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect18" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect19" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect20" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect21" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect22" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect23" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect24" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="ColorRect25" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Colors" type="GridContainer" parent="HBox"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+columns = 2
+
+[node name="LabelRed" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Red:"
+
+[node name="ProgressRed" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "0"
+
+[node name="LabelBlue" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Blue:"
+
+[node name="ProgressBlue" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "0"
+
+[node name="LabelGreen" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Green:"
+
+[node name="ProgressGreen" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "0"
+
+[node name="LabelYellow" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Yellow:"
+
+[node name="ProgressYellow" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "0"
+
+[node name="LabelPurple" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Purple:"
+
+[node name="ProgressPurple" type="Label" parent="HBox/Colors"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "0"
 
 [node name="End" type="Label" parent="."]
 visible = false
-offset_left = 428.0
-offset_top = 593.0
-offset_right = 565.0
-offset_bottom = 616.0
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -205.0
+offset_top = -67.0
+offset_right = 205.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 48
 text = "Item Synthesized!"
-
-[node name="ProgressRed" type="Label" parent="."]
-offset_left = 572.0
-offset_top = 99.0
-offset_right = 709.0
-offset_bottom = 122.0
-text = "0"
-
-[node name="ProgressBlue" type="Label" parent="."]
-offset_left = 572.0
-offset_top = 117.0
-offset_right = 709.0
-offset_bottom = 140.0
-text = "0"
-
-[node name="ProgressGreen" type="Label" parent="."]
-offset_left = 572.0
-offset_top = 137.0
-offset_right = 709.0
-offset_bottom = 160.0
-text = "0"
-
-[node name="ProgressYellow" type="Label" parent="."]
-offset_left = 572.0
-offset_top = 157.0
-offset_right = 709.0
-offset_bottom = 180.0
-text = "0"
-
-[node name="ProgressPurple" type="Label" parent="."]
-offset_left = 572.0
-offset_top = 178.0
-offset_right = 709.0
-offset_bottom = 201.0
-text = "0"
-
-[node name="LabelRed" type="Label" parent="."]
-offset_left = 515.0
-offset_top = 99.0
-offset_right = 652.0
-offset_bottom = 122.0
-text = "Red:"
-
-[node name="LabelBlue" type="Label" parent="."]
-offset_left = 515.0
-offset_top = 117.0
-offset_right = 652.0
-offset_bottom = 140.0
-text = "Blue:"
-
-[node name="LabelGreen" type="Label" parent="."]
-offset_left = 515.0
-offset_top = 137.0
-offset_right = 652.0
-offset_bottom = 160.0
-text = "Green:"
-
-[node name="LabelYellow" type="Label" parent="."]
-offset_left = 515.0
-offset_top = 157.0
-offset_right = 652.0
-offset_bottom = 180.0
-text = "Yellow:"
-
-[node name="LabelPurple" type="Label" parent="."]
-offset_left = 515.0
-offset_top = 178.0
-offset_right = 652.0
-offset_bottom = 201.0
-text = "Purple:"
