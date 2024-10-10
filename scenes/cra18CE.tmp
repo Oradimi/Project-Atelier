@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://e6yby6wbqy8f"]
+
+[ext_resource type="Script" path="res://scenes/crafting_menu.gd" id="1_8ci11"]
+[ext_resource type="Texture2D" uid="uid://2uwb8edqx4pk" path="res://image/icon.svg" id="2_7uu4y"]
+[ext_resource type="PackedScene" uid="uid://dk06xy8jfk211" path="res://scenes/item.tscn" id="3_nei00"]
+
+[node name="CraftingMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ci11")
+
+[node name="RecipeSelection" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="RecipeSelection"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="RecipeSelection/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
+
+[node name="ItemList" type="ItemList" parent="RecipeSelection/HBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/icon_margin = 10
+theme_override_constants/v_separation = 20
+theme_override_constants/h_separation = 20
+theme_override_font_sizes/font_size = 36
+item_count = 3
+fixed_icon_size = Vector2i(64, 64)
+item_0/text = "Mushroom"
+item_0/icon = ExtResource("2_7uu4y")
+item_1/text = "Mushroom 2"
+item_1/icon = ExtResource("2_7uu4y")
+item_2/text = "Mushroom 3"
+item_2/icon = ExtResource("2_7uu4y")
+
+[node name="Item" parent="RecipeSelection/HBoxContainer" instance=ExtResource("3_nei00")]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="RecipeSelection/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="RecipeSelection"]
+visible = false
+layout_mode = 0
+offset_left = 76.0
+offset_top = 70.0
+offset_right = 211.0
+offset_bottom = 101.0
+text = "Mushroom"
+icon = ExtResource("2_7uu4y")
+alignment = 0
+text_overrun_behavior = 4
+autowrap_mode = 3
+expand_icon = true

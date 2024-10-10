@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Effect" load_steps=2 format=3 uid="uid://dbhy0oybcg07c"]
+
+[ext_resource type="Script" path="res://misc_scripts/effect_data.gd" id="1_yb5sc"]
+
+[resource]
+script = ExtResource("1_yb5sc")
+name = "Damage"
+value = 5
+target_parameter = 2
+combat_target = 0

@@ -12,6 +12,13 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5xjxb")
 
+[node name="ShapeID" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 36
+text = "Selected Shape ID: "
+
 [node name="HBox" type="HBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -21,9 +28,72 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="Item" parent="HBox" instance=ExtResource("2_1l0gd")]
+[node name="Tiles" type="Control" parent="HBox"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="Shapes" type="GridContainer" parent="HBox/Tiles"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = -49.0
+offset_right = 49.0
+offset_bottom = 49.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Shape" type="GridContainer" parent="HBox/Tiles/Shapes"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 8
+columns = 3
+
+[node name="ColorRect1" type="ColorRect" parent="HBox/Tiles/Shapes/Shape"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect2" type="ColorRect" parent="HBox/Tiles/Shapes/Shape"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect3" type="ColorRect" parent="HBox/Tiles/Shapes/Shape"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect4" type="ColorRect" parent="HBox/Tiles/Shapes/Shape"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect5" type="ColorRect" parent="HBox/Tiles/Shapes/Shape"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect6" type="ColorRect" parent="HBox/Tiles/Shapes/Shape"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect7" type="ColorRect" parent="HBox/Tiles/Shapes/Shape"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect8" type="ColorRect" parent="HBox/Tiles/Shapes/Shape"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect9" type="ColorRect" parent="HBox/Tiles/Shapes/Shape"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="Graveyard" type="Control" parent="HBox/Tiles"]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="Control" type="Control" parent="HBox"]
 layout_mode = 2
@@ -346,6 +416,23 @@ text = "Purple:"
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "0"
+
+[node name="Item" parent="." instance=ExtResource("2_1l0gd")]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -199.0
+offset_top = -450.0
+offset_right = 199.0
+offset_bottom = 450.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+data = null
 
 [node name="End" type="Label" parent="."]
 visible = false

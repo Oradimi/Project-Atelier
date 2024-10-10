@@ -6,6 +6,8 @@ class_name ItemData
 @export var icon: Texture2D
 @export var shapes: Array[ShapeData]
 @export var traits: Array[TraitData]
+@export var level: int
+@export var effect_thresholds: Dictionary
 
 #func _init():
 	#shapes.resize(9)

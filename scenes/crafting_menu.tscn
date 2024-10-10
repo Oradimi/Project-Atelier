@@ -1,0 +1,215 @@
+[gd_scene load_steps=4 format=3 uid="uid://e6yby6wbqy8f"]
+
+[ext_resource type="Script" path="res://scenes/crafting_menu.gd" id="1_8ci11"]
+[ext_resource type="Texture2D" uid="uid://2uwb8edqx4pk" path="res://image/icon.svg" id="2_7uu4y"]
+[ext_resource type="PackedScene" uid="uid://p3q8tcvu7d0m" path="res://scenes/grid.tscn" id="3_uquqv"]
+
+[node name="CraftingMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ci11")
+
+[node name="RecipeSelection" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="RecipeSelection"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="RecipeSelection/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
+
+[node name="RecipeList" type="ItemList" parent="RecipeSelection/HBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/icon_margin = 10
+theme_override_constants/v_separation = 20
+theme_override_constants/h_separation = 20
+theme_override_font_sizes/font_size = 36
+item_count = 3
+fixed_icon_size = Vector2i(64, 64)
+item_0/text = "Mushroom"
+item_0/icon = ExtResource("2_7uu4y")
+item_1/text = "Honey"
+item_1/icon = ExtResource("2_7uu4y")
+item_2/text = "Wood Stick"
+item_2/icon = ExtResource("2_7uu4y")
+
+[node name="Recipe" type="AspectRatioContainer" parent="RecipeSelection/HBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="RecipeSelection/HBoxContainer/Recipe"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Name"
+horizontal_alignment = 1
+
+[node name="Icon" type="TextureRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(320, 320)
+layout_mode = 2
+texture = ExtResource("2_7uu4y")
+stretch_mode = 5
+
+[node name="Description" type="Label" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Description"
+
+[node name="ComponentsTitle" type="Label" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Components"
+horizontal_alignment = 1
+
+[node name="Shapes" type="GridContainer" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+columns = 2
+
+[node name="Shape1" type="GridContainer" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes"]
+layout_mode = 2
+columns = 3
+
+[node name="ColorRect1" type="ColorRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes/Shape1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect2" type="ColorRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes/Shape1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect3" type="ColorRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes/Shape1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect4" type="ColorRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes/Shape1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect5" type="ColorRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes/Shape1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect6" type="ColorRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes/Shape1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect7" type="ColorRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes/Shape1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect8" type="ColorRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes/Shape1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="ColorRect9" type="ColorRect" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Shapes/Shape1"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+
+[node name="TraitsTitle" type="Label" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Traits"
+horizontal_alignment = 1
+
+[node name="Traits" type="VBoxContainer" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Trait1" type="Label" parent="RecipeSelection/HBoxContainer/Recipe/MarginContainer/VBoxContainer/Traits"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Trait 1"
+
+[node name="Control" type="Control" parent="RecipeSelection/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="IngredientSelection" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="IngredientSelection"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="IngredientSelection/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_bottom = 100
+
+[node name="IngredientList" type="ItemList" parent="IngredientSelection/HBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/icon_margin = 10
+theme_override_constants/v_separation = 20
+theme_override_constants/h_separation = 20
+theme_override_font_sizes/font_size = 36
+max_columns = 2
+icon_mode = 0
+fixed_icon_size = Vector2i(64, 64)
+
+[node name="Grid" parent="IngredientSelection/HBoxContainer" instance=ExtResource("3_uquqv")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="Button" type="Button" parent="IngredientSelection"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "Confirm"
+
+[connection signal="item_activated" from="RecipeSelection/HBoxContainer/MarginContainer/RecipeList" to="." method="_on_item_list_item_activated"]
+[connection signal="item_selected" from="RecipeSelection/HBoxContainer/MarginContainer/RecipeList" to="." method="_on_item_list_item_selected"]
+[connection signal="item_activated" from="IngredientSelection/HBoxContainer/MarginContainer/IngredientList" to="." method="_on_ingredient_list_item_activated"]
+[connection signal="item_selected" from="IngredientSelection/HBoxContainer/MarginContainer/IngredientList" to="." method="_on_ingredient_list_item_selected"]
+[connection signal="button_down" from="IngredientSelection/Button" to="." method="_on_button_button_down"]

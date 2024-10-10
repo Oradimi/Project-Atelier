@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://2uwb8edqx4pk" path="res://image/icon.svg" id="2_2dyw7"]
 [ext_resource type="Resource" uid="uid://v8lvh11feefp" path="res://resources/items/mushroom.tres" id="2_x731l"]
 
-[node name="Item" type="AspectRatioContainer"]
-offset_right = 178.0
-offset_bottom = 391.0
+[node name="Item" type="PanelContainer"]
+offset_right = 360.0
+offset_bottom = 729.0
 script = ExtResource("1_2sqwk")
 data = ExtResource("2_x731l")
 
@@ -33,7 +33,6 @@ texture = ExtResource("2_2dyw7")
 stretch_mode = 5
 
 [node name="Description" type="Label" parent="MarginContainer/VBoxContainer"]
-visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Description"
