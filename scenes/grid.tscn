@@ -32,6 +32,7 @@ alignment = 1
 visible = false
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
 
 [node name="Shapes" type="GridContainer" parent="HBox/Tiles"]
 layout_mode = 1
@@ -46,6 +47,7 @@ offset_right = 49.0
 offset_bottom = 49.0
 grow_horizontal = 2
 grow_vertical = 2
+columns = 5
 
 [node name="Shape" type="GridContainer" parent="HBox/Tiles/Shapes"]
 visible = false
@@ -363,7 +365,7 @@ color = Color(0, 0, 0, 0)
 [node name="Colors" type="GridContainer" parent="HBox"]
 custom_minimum_size = Vector2(80, 0)
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 10
 size_flags_vertical = 4
 columns = 2
 

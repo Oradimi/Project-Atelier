@@ -18,10 +18,12 @@ extends Control
 ]
 
 @export var selectedItems: Array[ItemData]
+@export var shapeDict = {}
+@export var dictSelect: Vector2i = Vector2i(0, 0)
 @export var shapeList: Array[ShapeData]
 @export var selectedShape: ShapeData
 
-var currentShapeIndex: int
+#var currentShapeIndex: int
 var offset: Vector2i
 var max_offset: Vector2i
 var temp_grid_tiles: Array[Color]
@@ -36,7 +38,7 @@ var selectionState: SelectionState
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	currentShapeIndex = 0
+	#currentShapeIndex = 0
 	selectionState = SelectionState.SHAPE
 
 	var children = grid_container.get_children()
@@ -62,18 +64,74 @@ func _process(delta: float) -> void:
 			process_placement()
 
 func process_shape():
-	if shapes.get_child_count() <= 1:
+	if no_shape_left() and selectedShape == null:
 		return
+	#if shapes.get_child_count() <= 1 + selectedItems.size():
+		#return
 	if Input.is_action_just_pressed("grid_move_down"):
-		currentShapeIndex += 1
+		change_selected_shape(Vector2i(1, 0))
 	if Input.is_action_just_pressed("grid_move_up"):
-		currentShapeIndex -= 1
+		change_selected_shape(Vector2i(-1, 0))
+	if Input.is_action_just_pressed("grid_move_right"):
+		change_selected_shape(Vector2i(0, 1))
+	if Input.is_action_just_pressed("grid_move_left"):
+		change_selected_shape(Vector2i(0, -1))
 	if Input.is_action_just_pressed("grid_next_ingredient"):
 		selectionState = SelectionState.PLACEMENT
-		selectedShape = shapeList.pop_at(currentShapeIndex)
-		shapes.get_child(currentShapeIndex + 1).reparent(graveyard)
-	currentShapeIndex = clampi(currentShapeIndex, 0, max(0, shapeList.size() - 1))
-	shapeID.text = "Selected Shape ID: " + str(currentShapeIndex)
+		selectedShape = shapeDict[dictSelect.x][dictSelect.y].duplicate()
+		shapeDict[dictSelect.x][dictSelect.y] = null
+		for item_tile: ColorRect in shapes.get_child(get_current_shape_display_index()).get_children():
+			item_tile.color = Color.TRANSPARENT
+		change_selected_shape(Vector2i(0, 1))
+		#shapes.get_child(get_current_shape_display_index()).reparent(graveyard)
+	#dictSelect.x = clampi(dictSelect.x, 0, shapeDict.size() - 1)
+	#dictSelect.y = clampi(dictSelect.y, 0, max(0, shapeDict[dictSelect.x].size() - 1))
+	#currentShapeIndex = clampi(currentShapeIndex, 0, max(0, shapeList.size() - 1))
+	shapeID.text = "Selected Shape ID: (" + str(dictSelect.x) + ", " + str(dictSelect.y) + ")"
+
+func is_all_null(array: Array):
+	for element in array:
+		if element != null:
+			return false
+	return true
+
+func change_selected_shape(direction: Vector2i):
+	# Initial position updates
+	dictSelect += direction
+	dictSelect.x = posmod(dictSelect.x, shapeDict.size())
+	dictSelect.y = posmod(dictSelect.y, shapeDict[dictSelect.x].size())
+
+	# If all shapes are null, we return early
+	if no_shape_left():
+		return
+
+	var start_x = dictSelect.x
+	var start_y = dictSelect.y
+
+	# Loop through the grid to find the next available shape
+	while shapeDict[dictSelect.x][dictSelect.y] == null:
+		# Move horizontally first
+		dictSelect.y += 1
+		dictSelect.y = posmod(dictSelect.y, shapeDict[dictSelect.x].size())
+
+		# If the row is all null, move to the next row (x-axis)
+		if is_all_null(shapeDict[dictSelect.x]):
+			dictSelect.x += 1
+			dictSelect.x = posmod(dictSelect.x, shapeDict.size())
+
+			# Reset y when moving to a new row to ensure we check all columns
+			dictSelect.y = posmod(start_y, shapeDict[dictSelect.x].size())
+
+		# Break the loop if we've come full circle and found no valid shape
+		if dictSelect.x == start_x and dictSelect.y == start_y:
+			return  # No shape available, exit to avoid infinite loop
+
+
+func get_current_shape_display_index():
+	var index = 1
+	for i in range(dictSelect.x):
+		index += 5
+	return index + 1 + dictSelect.y
 
 func update_grid():
 	for i in len(temp_grid_tiles):
@@ -91,7 +149,7 @@ func update_grid():
 		if progress_nodes[color] is Label:
 			progress_nodes[color].text = str(progress[color])
 	
-	if shapeList.is_empty() and selectedShape == null:
+	if no_shape_left() and selectedShape == null:
 		end.visible = true
 		return
 	else:
@@ -142,6 +200,12 @@ func input_manager():
 		selectionState = SelectionState.SHAPE
 		selectedShape = null
 		update_grid()
+
+func no_shape_left():
+	for index in range(shapeDict.size()):
+		if not is_all_null(shapeDict[index]):
+			return false
+	return true
 
 func get_coords(index: int, size: int) -> Vector2i:
 	var x = index % size

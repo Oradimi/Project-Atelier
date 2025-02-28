@@ -49,23 +49,34 @@ func _on_ingredient_list_item_activated(index: int) -> void:
 func _on_button_button_down() -> void:
 	var grid = $IngredientSelection/HBoxContainer/Grid
 	grid.selectedItems = selectedIngredients
+	var i = 0
 	for item in grid.selectedItems:
-		grid.shapeList.append_array(item.shapes)
+		#grid.shapeList.append_array(item.shapes)
+		grid.shapeDict[i] = item.shapes
+		i += 1
 	var ingredientListContainer = $IngredientSelection/HBoxContainer/MarginContainer
 	ingredientListContainer.hide()
 	var tilesContainer = $IngredientSelection/HBoxContainer/Grid/HBox/Tiles
 	var shapeContainer = $IngredientSelection/HBoxContainer/Grid/HBox/Tiles/Shapes
+	var max_shapes = 4
 	for item: ItemData in grid.selectedItems:
-		#shapeContainer.add_icon_item(item.icon, false)
-		for item_shape: ShapeData in item.shapes:
-			var sampleChild = shapeContainer.get_child(0).duplicate()
+		var new_image: TextureRect = TextureRect.new()
+		new_image.texture = item.icon
+		shapeContainer.add_child(new_image)
+		for item_shape_id in range(max_shapes):
+			var sampleChild: GridContainer = shapeContainer.get_child(0).duplicate()
 			shapeContainer.add_child(sampleChild)
 			var child_number = shapeContainer.get_child_count() - 1
 			shapeContainer.get_child(child_number).show()
+			if item_shape_id >= item.shapes.size():
+				for item_tile: ColorRect in sampleChild.get_children():
+					item_tile.color = Color.TRANSPARENT
+				shapeContainer.add_child(sampleChild)
+				continue
 			var j = 0
 			for item_tile: ColorRect in shapeContainer.get_child(child_number).get_children():
-				if (item_shape.shape[j]):
-					item_tile.color = item_shape.get_color()
+				if item.shapes[item_shape_id].shape[j]:
+					item_tile.color = item.shapes[item_shape_id].get_color()
 				j += 1
 	tilesContainer.show()
 	var button = $IngredientSelection/Button

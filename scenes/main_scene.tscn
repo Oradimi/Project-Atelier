@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://vytc8hj4xjof"]
+
+[ext_resource type="PackedScene" uid="uid://cjg7sj3mjt6d7" path="res://scene_cave/MeinaCave_Main.fbx" id="1_26sha"]
+[ext_resource type="PackedScene" uid="uid://0h4v2vmx8o8n" path="res://scene_cave/MeinaCave_Fixes1.fbx" id="2_jpcvi"]
+[ext_resource type="PackedScene" uid="uid://e6yby6wbqy8f" path="res://scenes/crafting_menu.tscn" id="3_fudx3"]
+
+[node name="MainScene" type="Node"]
+
+[node name="MeinaCave_Main" parent="." instance=ExtResource("1_26sha")]
+
+[node name="Camera3D" type="Camera3D" parent="MeinaCave_Main"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.33129, 8.41596)
+
+[node name="MeinaCave_Fixes1" parent="MeinaCave_Main" instance=ExtResource("2_jpcvi")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="MeinaCave_Main"]
+light_energy = 0.1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CraftingMenu" parent="CanvasLayer" instance=ExtResource("3_fudx3")]

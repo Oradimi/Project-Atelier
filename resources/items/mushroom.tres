@@ -11,3 +11,5 @@ description = "A nice, round mushroom"
 icon = ExtResource("1_6nyn2")
 shapes = Array[ExtResource("3_8ptbo")]([])
 traits = null
+level = 0
+effect_thresholds = {}
