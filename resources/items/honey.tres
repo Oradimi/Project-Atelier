@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="ItemData" load_steps=5 format=3 uid="uid://bvps7atyy7eoc"]
 
 [ext_resource type="Texture2D" uid="uid://2uwb8edqx4pk" path="res://image/icon.svg" id="1_qwhcw"]
-[ext_resource type="Script" path="res://misc_scripts/item_data.gd" id="2_uoyki"]
-[ext_resource type="Script" path="res://misc_scripts/shape_data.gd" id="3_ex4f2"]
-[ext_resource type="Script" path="res://misc_scripts/trait_data.gd" id="4_2ootx"]
+[ext_resource type="Script" uid="uid://br0e6jbf6h461" path="res://misc_scripts/item_data.gd" id="2_uoyki"]
+[ext_resource type="Script" uid="uid://bs2qaxgiy26jd" path="res://misc_scripts/shape_data.gd" id="3_ex4f2"]
+[ext_resource type="Script" uid="uid://36qyk282g80a" path="res://misc_scripts/trait_data.gd" id="4_2ootx"]
 
 [resource]
 script = ExtResource("2_uoyki")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://e6yby6wbqy8f"]
 
-[ext_resource type="Script" path="res://scenes/crafting_menu.gd" id="1_8ci11"]
+[ext_resource type="Script" uid="uid://dlmlxrudaluw2" path="res://scenes/crafting_menu.gd" id="1_8ci11"]
 [ext_resource type="Texture2D" uid="uid://2uwb8edqx4pk" path="res://image/icon.svg" id="2_7uu4y"]
 [ext_resource type="PackedScene" uid="uid://p3q8tcvu7d0m" path="res://scenes/grid.tscn" id="3_uquqv"]
 
@@ -39,8 +39,8 @@ theme_override_constants/margin_bottom = 100
 
 [node name="RecipeList" type="ItemList" parent="RecipeSelection/HBoxContainer/MarginContainer"]
 layout_mode = 2
-theme_override_constants/icon_margin = 10
 theme_override_constants/v_separation = 20
+theme_override_constants/icon_margin = 10
 theme_override_constants/h_separation = 20
 theme_override_font_sizes/font_size = 36
 item_count = 3
@@ -180,8 +180,8 @@ theme_override_constants/margin_bottom = 100
 
 [node name="IngredientList" type="ItemList" parent="IngredientSelection/HBoxContainer/MarginContainer"]
 layout_mode = 2
-theme_override_constants/icon_margin = 10
 theme_override_constants/v_separation = 20
+theme_override_constants/icon_margin = 10
 theme_override_constants/h_separation = 20
 theme_override_font_sizes/font_size = 36
 max_columns = 2

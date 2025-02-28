@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dk06xy8jfk211"]
 
-[ext_resource type="Script" path="res://scenes/item.gd" id="1_2sqwk"]
+[ext_resource type="Script" uid="uid://0u3780stxvt8" path="res://scenes/item.gd" id="1_2sqwk"]
 [ext_resource type="Texture2D" uid="uid://2uwb8edqx4pk" path="res://image/icon.svg" id="2_2dyw7"]
 [ext_resource type="Resource" uid="uid://v8lvh11feefp" path="res://resources/items/mushroom.tres" id="2_x731l"]
 
