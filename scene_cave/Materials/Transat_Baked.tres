@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dwnjcf3up61xa"]
+
+[ext_resource type="Texture2D" uid="uid://c1c0lu42x0i7n" path="res://scene_cave/SimpleBake_Bakes/Transat_Baked_PBR_Diffuse.png" id="1_g30oj"]
+
+[resource]
+resource_name = "Transat_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_g30oj")
+emission_enabled = true

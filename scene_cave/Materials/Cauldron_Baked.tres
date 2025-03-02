@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bx7x11xp4q8cm"]
+
+[ext_resource type="Texture2D" uid="uid://bk0k582didvpm" path="res://scene_cave/SimpleBake_Bakes/Cauldron_Baked_PBR_Normal.png" id="1_x4jt3"]
+
+[resource]
+resource_name = "Cauldron_Baked"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0, 0, 1)
+emission_enabled = true
+normal_enabled = true
+normal_scale = 0.0
+normal_texture = ExtResource("1_x4jt3")

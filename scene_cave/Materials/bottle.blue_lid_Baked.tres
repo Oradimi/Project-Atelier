@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dsr6iwbsl4xos"]
+
+[ext_resource type="Texture2D" uid="uid://o0jrebgv4abx" path="res://scene_cave/SimpleBake_Bakes/bottle.blue_lid_Baked_PBR_Diffuse.png" id="1_pg8wp"]
+
+[resource]
+resource_name = "bottle.blue_lid_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_pg8wp")
+emission_enabled = true

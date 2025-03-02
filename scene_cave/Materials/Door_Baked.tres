@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://sito5y7hd0ki"]
+
+[ext_resource type="Texture2D" uid="uid://iv022svx1g6i" path="res://scene_cave/SimpleBake_Bakes/Door_Baked_PBR_Diffuse.png" id="1_atl6s"]
+[ext_resource type="Texture2D" uid="uid://dxm4g06g6672h" path="res://scene_cave/SimpleBake_Bakes/Door_Baked_PBR_Normal.png" id="2_b4ngk"]
+
+[resource]
+resource_name = "Door_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_atl6s")
+emission_enabled = true
+normal_enabled = true
+normal_scale = 0.0
+normal_texture = ExtResource("2_b4ngk")

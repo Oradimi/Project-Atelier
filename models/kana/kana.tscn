@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr15ygtbhwkt1"]
+
+[ext_resource type="PackedScene" uid="uid://cov1vjfvgglf4" path="res://models/kana/Kana.fbx" id="1_5not6"]
+
+[node name="Kana" instance=ExtResource("1_5not6")]
+
+[node name="Clothes_Meina" parent="Armature/Skeleton3D" index="1"]
+visible = false

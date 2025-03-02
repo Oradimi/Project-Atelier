@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dnvsn48agqksy"]
+
+[ext_resource type="Texture2D" uid="uid://cjt6j3lmbfynp" path="res://scene_cave/SimpleBake_Bakes/Staff_Baked_PBR_Diffuse.png" id="1_xi476"]
+
+[resource]
+resource_name = "Staff_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_xi476")
+emission_enabled = true

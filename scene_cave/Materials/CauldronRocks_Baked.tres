@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://c7fmphf61f6mx"]
+
+[ext_resource type="Texture2D" uid="uid://ccol61ayexoju" path="res://scene_cave/SimpleBake_Bakes/CauldronRocks_Baked_PBR_Diffuse.png" id="1_57hm0"]
+[ext_resource type="Texture2D" uid="uid://6dwmeighnpxo" path="res://scene_cave/SimpleBake_Bakes/CauldronRocks_Baked_PBR_Normal.png" id="2_gqwe4"]
+
+[resource]
+resource_name = "CauldronRocks_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_57hm0")
+emission_enabled = true
+normal_enabled = true
+normal_scale = 0.0
+normal_texture = ExtResource("2_gqwe4")

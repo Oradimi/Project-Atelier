@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://c2j5yuv67frum"]
+
+[ext_resource type="Texture2D" uid="uid://blbjfaulm01w" path="res://scene_cave/SimpleBake_Bakes/Hang_Baked_PBR_Diffuse.png" id="1_y8c2m"]
+[ext_resource type="Texture2D" uid="uid://djb118lnix2nc" path="res://scene_cave/SimpleBake_Bakes/Hang_Baked_PBR_Normal.png" id="2_d1myg"]
+
+[resource]
+resource_name = "Hang_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_y8c2m")
+emission_enabled = true
+normal_enabled = true
+normal_scale = 0.0
+normal_texture = ExtResource("2_d1myg")

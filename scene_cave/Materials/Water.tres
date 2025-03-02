@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://drs3yospdi26i"]
+
+[resource]
+resource_name = "Water"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0, 0.6, 0.498039, 1)
+emission_enabled = true

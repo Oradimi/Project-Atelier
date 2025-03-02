@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dufl0wkpu5c5f"]
+
+[resource]
+resource_name = "Handle"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.905882, 0.8, 0.192158, 1)
+emission_enabled = true

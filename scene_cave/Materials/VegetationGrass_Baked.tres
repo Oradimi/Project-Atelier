@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b4idsryisqtyo"]
+
+[ext_resource type="Texture2D" uid="uid://daax4rmp62ggp" path="res://scene_cave/SimpleBake_Bakes/VegetationGrass_Baked_PBR_Diffuse.png" id="1_phfk4"]
+
+[resource]
+resource_name = "VegetationGrass_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_phfk4")
+emission_enabled = true

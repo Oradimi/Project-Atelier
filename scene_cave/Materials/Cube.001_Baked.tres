@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://0utrxfs2tfub"]
+
+[ext_resource type="Texture2D" uid="uid://bjwwwbppc6e6s" path="res://scene_cave/SimpleBake_Bakes/Books_Baked_PBR_Diffuse.png" id="1_rpgml"]
+
+[resource]
+resource_name = "Cube.001_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_rpgml")
+emission_enabled = true

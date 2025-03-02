@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bpvs3e12775f0"]
+
+[ext_resource type="Texture2D" uid="uid://cpv6wqabm2vx" path="res://scene_cave/SimpleBake_Bakes/Stool_Baked_PBR_Diffuse.png" id="1_a55yr"]
+[ext_resource type="Texture2D" uid="uid://c88mr4fdhujt1" path="res://scene_cave/SimpleBake_Bakes/Stool_Baked_PBR_Normal.png" id="2_cdva2"]
+
+[resource]
+resource_name = "Stool_Baked.001"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_a55yr")
+emission_enabled = true
+normal_enabled = true
+normal_scale = 0.0
+normal_texture = ExtResource("2_cdva2")

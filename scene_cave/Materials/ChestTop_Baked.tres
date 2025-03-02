@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://cfs420ti2aoi0"]
+
+[ext_resource type="Texture2D" uid="uid://c6fs8twdlu5q1" path="res://scene_cave/SimpleBake_Bakes/ChestTop_Baked_PBR_Diffuse.png" id="1_yqkks"]
+[ext_resource type="Texture2D" uid="uid://iy8qfia3vgn" path="res://scene_cave/SimpleBake_Bakes/ChestTop_Baked_PBR_Normal.png" id="2_wgfwd"]
+
+[resource]
+resource_name = "ChestTop_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_yqkks")
+emission_enabled = true
+normal_enabled = true
+normal_scale = 0.0
+normal_texture = ExtResource("2_wgfwd")

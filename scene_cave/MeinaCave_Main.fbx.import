@@ -32,7 +32,226 @@ animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"materials": {
+"BelowCauldron_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/BelowCauldron_Baked.tres"
+},
+"Bookshelf_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Bookshelf_Baked.tres"
+},
+"CauldronHolder_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/CauldronHolder_Baked.tres"
+},
+"CauldronRocks_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/CauldronRocks_Baked.tres"
+},
+"Cauldron_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Cauldron_Baked.tres"
+},
+"Cave_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Cave_Baked.tres"
+},
+"ChestBottom_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/ChestBottom_Baked.tres"
+},
+"ChestTop_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/ChestTop_Baked.tres"
+},
+"Cube.001_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Cube.001_Baked.tres"
+},
+"Door_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Door_Baked.tres"
+},
+"Handle": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Handle.tres"
+},
+"Hang_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Hang_Baked.tres"
+},
+"Inside_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Inside_Baked.tres"
+},
+"Ladder_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Ladder_Baked.tres"
+},
+"Material.005": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Material.005.tres"
+},
+"Material.006": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Material.006.tres"
+},
+"Material.009": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Material.009.tres"
+},
+"Material.011": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Material.011.tres"
+},
+"Material.012": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Material.012.tres"
+},
+"MeinaStaffCrystals_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/MeinaStaffCrystals_Baked.tres"
+},
+"OnsenRocks_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/OnsenRocks_Baked.tres"
+},
+"Planks.001_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Planks.001_Baked.tres"
+},
+"PlanksWindow_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/PlanksWindow_Baked.tres"
+},
+"ScatteredRocks_Baked.001": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/ScatteredRocks_Baked.001.tres"
+},
+"Staff_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Staff_Baked.tres"
+},
+"StairsGarden_Baked.001": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/StairsGarden_Baked.001.tres"
+},
+"StairsOnsenRamp_Baked.001": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/StairsOnsenRamp_Baked.001.tres"
+},
+"StairsOnsen_Baked.001": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/StairsOnsen_Baked.001.tres"
+},
+"Stool_Baked.001": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Stool_Baked.001.tres"
+},
+"SunCrystal": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/SunCrystal.tres"
+},
+"Transat_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Transat_Baked.tres"
+},
+"Tree_Baked.001": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Tree_Baked.001.tres"
+},
+"VegetationClovers_Baked.001": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/VegetationClovers_Baked.001.tres"
+},
+"VegetationGrass_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/VegetationGrass_Baked.tres"
+},
+"Water": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/Water.tres"
+},
+"WaterCauldron": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/WaterCauldron.tres"
+},
+"WaterOnsen": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/WaterOnsen.tres"
+},
+"blue": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/blue.tres"
+},
+"bottle.blue_lid_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/bottle.blue_lid_Baked.tres"
+},
+"bottle.purple_lid_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/bottle.purple_lid_Baked.tres"
+},
+"crystal.gold": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/crystal.gold.tres"
+},
+"crystal.leaf": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/crystal.leaf.tres"
+},
+"crystal.marine": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/crystal.marine.tres"
+},
+"crystal.purpur": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/crystal.purpur.tres"
+},
+"glass": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/glass.tres"
+},
+"green": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/green.tres"
+},
+"grey": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/grey.tres"
+},
+"leaf_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/leaf_Baked.tres"
+},
+"pot.green_lid_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/pot.green_lid_Baked.tres"
+},
+"pot.red_lid_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/pot.red_lid_Baked.tres"
+},
+"pot.yellow_lid_Baked": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/pot.yellow_lid_Baked.tres"
+},
+"red": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/red.tres"
+},
+"violet": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/violet.tres"
+},
+"yellow": {
+"use_external/enabled": true,
+"use_external/path": "res://scene_cave/Materials/yellow.tres"
+}
+}
+}
 fbx/importer=0
 fbx/allow_geometry_helper_nodes=false
 fbx/embedded_image_handling=1

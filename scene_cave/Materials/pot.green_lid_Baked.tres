@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cy4fiats3tre7"]
+
+[ext_resource type="Texture2D" uid="uid://ch810m6ulp8wd" path="res://scene_cave/SimpleBake_Bakes/pot.green_lid_Baked_PBR_Diffuse.png" id="1_c7sje"]
+
+[resource]
+resource_name = "pot.green_lid_Baked"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_c7sje")
+emission_enabled = true
