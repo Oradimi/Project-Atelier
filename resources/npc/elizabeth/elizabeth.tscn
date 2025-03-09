@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfhq778mwovi8"]
+
+[ext_resource type="PackedScene" uid="uid://cr0il6jehphs6" path="res://resources/npc/elizabeth/Elizabeth.fbx" id="1_2dafp"]
+
+[node name="Elizabeth" instance=ExtResource("1_2dafp")]
+
+[node name="PhysicsHairLeft" type="SpringBoneSimulator3D" parent="Armature/Skeleton3D" index="1"]
+setting_count = 1
+settings/0/root_bone_name = "Hair_back_0.L"
+settings/0/root_bone = 10
+settings/0/end_bone_name = "Hair_back_8.L_end"
+settings/0/end_bone = 19
+settings/0/extend_end_bone = false
+settings/0/center_from = 0
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.02
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 1.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 1.0
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.05
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0
+
+[node name="PhysicsHairRight" type="SpringBoneSimulator3D" parent="Armature/Skeleton3D" index="2"]
+setting_count = 1
+settings/0/root_bone_name = "Hair_back_0.R"
+settings/0/root_bone = 20
+settings/0/end_bone_name = "Hair_back_8.R_end"
+settings/0/end_bone = 29
+settings/0/extend_end_bone = false
+settings/0/center_from = 0
+settings/0/individual_config = false
+settings/0/rotation_axis = 3
+settings/0/radius/value = 0.02
+settings/0/radius/damping_curve = null
+settings/0/stiffness/value = 1.0
+settings/0/stiffness/damping_curve = null
+settings/0/drag/value = 1.0
+settings/0/drag/damping_curve = null
+settings/0/gravity/value = 0.05
+settings/0/gravity/damping_curve = null
+settings/0/gravity/direction = Vector3(0, -1, 0)
+settings/0/enable_all_child_collisions = true
+settings/0/exclude_collision_count = 0

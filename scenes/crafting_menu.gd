@@ -34,15 +34,15 @@ func _on_item_list_item_selected(index: int) -> void:
 func _on_item_list_item_activated(index: int) -> void:
 	recipeSelection.hide()
 	ingredientSelection.show()
-	for item in InventoryData.itemList:
+	for item in InventoryManager.item_list:
 		ingredientList.add_item(item.name, item.icon)
 
 func _on_ingredient_list_item_selected(index: int) -> void:
-	itemDisplay.fill_in_data(InventoryData.itemList[index])
+	itemDisplay.fill_in_data(InventoryManager.item_list[index])
 	itemDisplay.show()
 
 func _on_ingredient_list_item_activated(index: int) -> void:
-	selectedIngredients.append(InventoryData.itemList[index])
+	selectedIngredients.append(InventoryManager.item_list[index])
 	ingredientList.set_item_disabled(index, true)
 	itemDisplay.hide()
 

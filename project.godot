@@ -17,12 +17,14 @@ config/icon="res://image/icon.svg"
 
 [autoload]
 
-InventoryData="*res://misc_scripts/inventory_data.gd"
+SignalBus="*res://misc/signal_bus.gd"
+GameManager="*res://scenes/manager/game_manager.gd"
+InventoryManager="*res://scenes/manager/inventory_manager.gd"
 
 [display]
 
-window/size/viewport_width=1600
-window/size/viewport_height=900
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 

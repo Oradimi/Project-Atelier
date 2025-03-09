@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://p3q8tcvu7d0m"]
 
 [ext_resource type="Script" uid="uid://bjtik6w4pf3ep" path="res://scenes/grid.gd" id="1_5xjxb"]
-[ext_resource type="PackedScene" uid="uid://dk06xy8jfk211" path="res://scenes/item.tscn" id="2_1l0gd"]
+[ext_resource type="PackedScene" uid="uid://dk06xy8jfk211" path="res://scenes/class/item.tscn" id="2_1l0gd"]
 
 [node name="Grid" type="Control"]
 layout_mode = 3
@@ -32,7 +32,6 @@ alignment = 1
 visible = false
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
 
 [node name="Shapes" type="GridContainer" parent="HBox/Tiles"]
 layout_mode = 1
@@ -100,7 +99,6 @@ offset_bottom = 40.0
 [node name="Control" type="Control" parent="HBox"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 2.0
 
 [node name="GridContainer" type="GridContainer" parent="HBox/Control"]
 layout_mode = 1
@@ -109,10 +107,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -383.0
-offset_top = -383.0
-offset_right = 383.0
-offset_bottom = 383.0
+offset_left = -258.0
+offset_top = -258.0
+offset_right = 258.0
+offset_bottom = 258.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 6
@@ -121,103 +119,103 @@ size_flags_stretch_ratio = 2.0
 columns = 5
 
 [node name="ColorRect1" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect2" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect3" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect4" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect5" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect6" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect7" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect8" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect9" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect10" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect11" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect12" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect13" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect14" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect15" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect16" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect17" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect18" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect19" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect20" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect21" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect22" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect23" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect24" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="ColorRect25" type="ColorRect" parent="HBox/Control/GridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="PreviewGridContainer" type="GridContainer" parent="HBox/Control"]
@@ -227,10 +225,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -398.0
-offset_top = -398.0
-offset_right = 368.0
-offset_bottom = 368.0
+offset_left = -258.0
+offset_top = -258.0
+offset_right = 258.0
+offset_bottom = 258.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 6
@@ -238,127 +236,127 @@ size_flags_vertical = 4
 columns = 5
 
 [node name="ColorRect1" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect2" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect3" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect4" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect5" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect6" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect7" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect8" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect9" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect10" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect11" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect12" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect13" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect14" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect15" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect16" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect17" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect18" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect19" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect20" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect21" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect22" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect23" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect24" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 
 [node name="ColorRect25" type="ColorRect" parent="HBox/Control/PreviewGridContainer"]
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 color = Color(0, 0, 0, 0)
 

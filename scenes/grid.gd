@@ -150,6 +150,7 @@ func update_grid():
 			progress_nodes[color].text = str(progress[color])
 	
 	if no_shape_left() and selectedShape == null:
+		# TODO
 		end.visible = true
 		return
 	else:

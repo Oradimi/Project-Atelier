@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b2rd7se2mwmgi"]
+
+[ext_resource type="Texture2D" uid="uid://dxc2iipbuh6d6" path="res://resources/npc/elizabeth/ElizabethTexture.png" id="1_x1tmd"]
+
+[resource]
+resource_name = "Material"
+diffuse_mode = 3
+specular_mode = 1
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_x1tmd")

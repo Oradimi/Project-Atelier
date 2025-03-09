@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://vytc8hj4xjof"]
 
 [ext_resource type="PackedScene" uid="uid://cjg7sj3mjt6d7" path="res://scene_cave/MeinaCave_Main.fbx" id="1_26sha"]
-[ext_resource type="PackedScene" uid="uid://bkp1i1coo8n77" path="res://models/meina/meina.tscn" id="1_pu3yx"]
+[ext_resource type="Script" uid="uid://bkhesy0yger2l" path="res://scenes/main_scene.gd" id="1_gubc5"]
+[ext_resource type="PackedScene" uid="uid://bkp1i1coo8n77" path="res://resources/npc/meina/meina.tscn" id="1_pu3yx"]
 [ext_resource type="PackedScene" uid="uid://0h4v2vmx8o8n" path="res://scene_cave/MeinaCave_Fixes1.fbx" id="2_jpcvi"]
-[ext_resource type="PackedScene" uid="uid://e6yby6wbqy8f" path="res://scenes/crafting_menu.tscn" id="3_fudx3"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7ykc4"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -20,15 +20,20 @@ tonemap_mode = 2
 size = Vector3(20.1963, 1, 20.0664)
 
 [node name="MainScene" type="Node"]
+script = ExtResource("1_gubc5")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_gubc5")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="OutsideCamera" type="Camera3D" parent="."]
+transform = Transform3D(0.748955, -0.20586, 0.629831, 0, 0.950516, 0.310676, -0.66262, -0.232683, 0.711894, 0.36363, 2.64678, 2.98035)
+current = true
+
+[node name="InsideCamera" type="Camera3D" parent="."]
 transform = Transform3D(0.16241, -0.307334, 0.93764, 0, 0.950256, 0.31147, -0.986723, -0.0505859, 0.154331, 1.62601, 1.27298, -3.37798)
 
 [node name="Meina" parent="." instance=ExtResource("1_pu3yx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.442653, 0.0328787, -4.362)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.442299, 0.0333016, -4.17887)
 
 [node name="MeinaCave" type="StaticBody3D" parent="."]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
@@ -71,7 +76,5 @@ omni_range = 1.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.28662, -0.333492, -23.0147)
 shape = SubResource("BoxShape3D_gubc5")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="CraftingMenu" parent="CanvasLayer" instance=ExtResource("3_fudx3")]
-metadata/_edit_use_anchors_ = true
+[node name="NPCPosition" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.442, 0.033, -3.1176)

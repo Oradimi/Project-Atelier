@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="TraitData" load_steps=3 format=3 uid="uid://dsps6d2dalbk5"]
 
-[ext_resource type="Script" uid="uid://36qyk282g80a" path="res://misc_scripts/trait_data.gd" id="1_gj2ru"]
+[ext_resource type="Script" uid="uid://36qyk282g80a" path="res://resources/traits/trait_data.gd" id="1_gj2ru"]
 [ext_resource type="Resource" uid="uid://dbhy0oybcg07c" path="res://resources/effects/damage.tres" id="2_3vvn0"]
 
 [resource]
